@@ -1,10 +1,12 @@
 #include<stdio.h>
 int main(){
     int num;
+    int first,Temp1,last,middle;
     scanf("%d",&num);
-    if(num/100>=1&&num/100<=9)
-        printf("The number is three digit number");
-    else
-        printf("The number is not three digit number");
+    first=num/100;
+    Temp1=num%100;
+    last=Temp1%10;
+    middle=Temp1/10;
+    printf("The sum of all digits are %d",first+last+middle);
     return 0;
 }
