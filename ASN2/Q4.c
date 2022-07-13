@@ -1,12 +1,13 @@
-#include<stdio.h>
-int main()
-{
-    int num;
-    printf("Please enter number to Check Even or odd without modulo");
-    scanf("%d",&num);
-    if((num/2)*2==num)
-        printf("The number is even");
-    else
-        printf("The number is odd");
-    return 0;
-}
+#include<stdio.h>  
+ int main()    
+{    
+int a,b;
+printf("Please Enter two numbers to swap");
+scanf("%d%d",&a,&b);      
+printf("Before swaping a=%d b=%d",a,b);      
+a=a+b;   
+b=a-b;  
+a=a-b; 
+printf("\nAfter swaping a=%d b=%d",a,b);    
+return 0;  
+}   
