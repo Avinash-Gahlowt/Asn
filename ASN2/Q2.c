@@ -1,12 +1,8 @@
 #include<stdio.h>
-int main()
-{
+int main(){
     int num;
-    printf("Enter any Number to check divisibility by 5");
+    printf("Enter any Number to remove its last digit");
     scanf("%d",&num);
-    if(num%5==0)
-         printf("Number is divisible by 5");
-    else
-        printf("The given number is not divisible by 5");
+    printf("%d",num/10);
     return 0;
 }
