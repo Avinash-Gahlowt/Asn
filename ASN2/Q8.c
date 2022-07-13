@@ -1,13 +1,11 @@
-#include <stdio.h>
-
-int main() {
-   int year;
-   scanf("%d",&year);
-
-   if (((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0))
-      printf("%d is a leap year", year);
-   else
-      printf("%d is not a leap year", year);
-
-   return 0;
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter any number to check even or odd");
+    scanf("%d",&num);
+    if(!(num&1))
+        printf("The number is even");
+    else
+        printf("The given numewr is odd");
+    return 0;
 }
