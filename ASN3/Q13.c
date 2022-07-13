@@ -1,7 +1,12 @@
 #include<stdio.h>
-int main(){
+int main()
+{
     int num;
-    printf("Enter three digit number");
+    printf("Enter any number");
     scanf("%d",&num);
-    printf("After rotation one digit towards right %d%d",num%10,num/10);
+    if(num%3==0&&num%2==0)
+        printf("The given number is divisible by 3 and divisible by 2.");
+    else
+        printf("The number is not divisible by both numbers together but may be divisible by any one numbers");
+    return 0;
 }
