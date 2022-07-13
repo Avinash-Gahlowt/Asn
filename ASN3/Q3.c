@@ -1,12 +1,12 @@
 #include<stdio.h>
-int main(){
-int a,b,temp;
-printf("Please Enter two numbers to swap");
-scanf("%d%d",&a,&b);      
-printf("Before swaping a=%d b=%d",a,b);   
-temp=a;
-a=b;
-b=temp;
-printf("After Swapping %d and %d",a,b);
-return 0; 
+int main()
+{
+   int num;
+    printf("Please enter number to Check Even or odd\t");
+   scanf("%d",&num);
+   if(num%2==0)
+        printf("The number is even");
+    else
+        printf("The number is odd");
+    return 0;
 }
