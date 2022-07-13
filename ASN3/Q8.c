@@ -1,11 +1,11 @@
 #include<stdio.h>
 int main(){
-    int num;
-    printf("Enter any number to check even or odd");
-    scanf("%d",&num);
-    if(!(num&1))
-        printf("The number is even");
+   int number1,number2;
+   printf("Enter two numbers");
+   scanf("%d%d",&number1,&number2);
+    if(number1>number2||number1==number2)
+        printf("The greater number is %d",number1);
     else
-        printf("The given numewr is odd");
+        printf("The greater number is %d",number2);
     return 0;
 }
