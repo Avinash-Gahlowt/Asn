@@ -1,8 +1,15 @@
 #include<stdio.h>
-int main(){
-    float amt;
-    printf("Please Enter amount in INR");
-    scanf("%f",&amt);
-    printf("The amount in USD of %.2f INR is %.2f",amt,amt/76.23);
+int main()
+{
+    char alpha;
+    printf("Enter any Alphabet\t");
+    scanf("%c",&alpha);
+    if (alpha>=65&&alpha<=90)
+        printf("the given alphabet is in Uppercase");
+    else if (alpha>=97&&alpha<=122)
+        printf("The given alphabet is in Lowecase");
+    else
+        printf("The given character is not an alphabet");
+    
     return 0;
 }
