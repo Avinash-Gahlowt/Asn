@@ -1,17 +1,15 @@
 #include<stdio.h>
 int main(){
-
-    int a=sizeof(a);
-    char b;
-    double c;
-    float d;
-    int x= sizeof(b);
-    int y= sizeof(c);
-    int z= sizeof(d);
-    printf("The size of int variable is %d\n",a);
-    printf("The size of int variable is %d\n",x);
-    printf("The size of int variable is %d\n",y);
-    printf("The size of int variable is %d\n",z);
+   
+    int n1,n2,n3;
+    scanf("%d%d%d",&n1,&n2,&n3);
+    if (n1 >= n2 && n1 >= n3)
+        printf("The greates number is %d",n1);
+    else if (n2>=n1&&n2>=n3)
+        printf("The greatest number is %d",n2);
+    else
+        printf("The greatest number is %d",n3);
     return 0;
+
     
 }
